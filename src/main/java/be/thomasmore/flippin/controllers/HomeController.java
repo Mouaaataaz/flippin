@@ -14,4 +14,9 @@ public class HomeController {
     public String about(Model model) {
         return "about";
     }
+
+    @GetMapping("/marketplace")
+    public String marketplace(Model model) {
+        return "marketplace";
+    }
 }

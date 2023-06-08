@@ -1,0 +1,47 @@
+body{
+color:black;
+}
+
+img {
+    border: 0;
+    width: 100px;
+    height: auto;
+}
+
+.navbar {
+    background: white;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 4px;
+}
+
+.nav-link {
+    color: black;
+}
+
+footer {
+    background-color: white;
+    border-top-style: solid;
+    border-top-color: black;
+    border-top-width: 4px;
+}
+
+.text-copyright{
+    color:black;
+}
+
+
+/** -------------------- Here Start The Marketplace Page ---------------------------------- */
+
+.border-listings{
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin-top: 10px;
+    position: center;
+    width: 90%;
+    border: solid black 2.5px;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
