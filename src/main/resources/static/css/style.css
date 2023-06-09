@@ -36,7 +36,7 @@ footer {
 .border-listings{
     position: relative;
     display: flex;
-    padding: 5px;
+    padding: 10px;
     margin-top: 10px;
     width: 90%;
     border: solid black 2.5px;
@@ -48,7 +48,10 @@ footer {
 
 /** -------------------- Here Start The Marketplace Page ---------------------------------- */
 
-
+.img-listing{
+    width:200px;
+    height: auto;
+}
 .ecommerce-name{
     margin-left: 20px;
     font-size: large;

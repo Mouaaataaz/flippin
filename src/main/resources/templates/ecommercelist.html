@@ -20,11 +20,11 @@
 <div th:replace="~{/fragments/headerfooter :: header}">This is the header</div>
 
 <div class="border-listings">
-  <img th:src="@{/img/fitness.jpg}" >
+  <img class="img-listing"th:src="@{/img/fitness.jpg}" >
   <div th:each="ecommerce: ${ecommerces}">
     <span class="ecommerce-name" th:text="${ecommerce.getEcommerceName()}">ecommerce name</span>
     <div class="ecommerce-location">
-      <i class="far fa-flag"></i>
+      <i class="fa fa-map-marker" ></i>
     <span th:text="${ecommerce.getLocation()}">ecommerce name</span>
     </div>
   </div>
