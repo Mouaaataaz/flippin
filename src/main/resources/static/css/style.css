@@ -34,14 +34,29 @@ footer {
 /** -------------------- Here Start The Marketplace Page ---------------------------------- */
 
 .border-listings{
-    justify-content: center;
-    align-items: center;
+    position: relative;
+    display: flex;
     padding: 5px;
     margin-top: 10px;
-    position: center;
     width: 90%;
     border: solid black 2.5px;
     border-radius: 10px;
     margin-left: auto;
     margin-right: auto;
+}
+
+
+/** -------------------- Here Start The Marketplace Page ---------------------------------- */
+
+
+.ecommerce-name{
+    margin-left: 20px;
+    font-size: large;
+}
+
+.ecommerce-location{
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+
 }

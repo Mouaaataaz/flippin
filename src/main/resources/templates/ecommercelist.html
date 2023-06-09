@@ -20,8 +20,13 @@
 <div th:replace="~{/fragments/headerfooter :: header}">This is the header</div>
 
 <div class="border-listings">
+  <img th:src="@{/img/fitness.jpg}" >
   <div th:each="ecommerce: ${ecommerces}">
-    <span th:text="${ecommerce.getEcommerceName()}">ecommerce name</span>
+    <span class="ecommerce-name" th:text="${ecommerce.getEcommerceName()}">ecommerce name</span>
+    <div class="ecommerce-location">
+      <i class="far fa-flag"></i>
+    <span th:text="${ecommerce.getLocation()}">ecommerce name</span>
+    </div>
   </div>
 </div>
 

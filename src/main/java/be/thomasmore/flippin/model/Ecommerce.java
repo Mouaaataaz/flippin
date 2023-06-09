@@ -23,6 +23,8 @@ public class Ecommerce {
 
     private String PaymentMethod;
 
+    private String Location;
+
     public Ecommerce() {
 
     }
@@ -89,5 +91,13 @@ public class Ecommerce {
 
     public void setPaymentMethod(String paymentMethod) {
         PaymentMethod = paymentMethod;
+    }
+
+    public String getLocation() {
+        return Location;
+    }
+
+    public void setLocation(String location) {
+        Location = location;
     }
 }
