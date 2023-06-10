@@ -29,9 +29,21 @@ public class EcommerceController {
     public String ecommerceDetails(Model model, @PathVariable(required = false) Integer id) {
         if (id == null) return "artistdetails";
         Optional<Ecommerce> optionalEcommerce = ecommerceRepository.findById(id);
+        Optional<Ecommerce> optionalPrev = ecommerceRepository.findFirstByIdLessThanOrderByIdDesc(id);
+        Optional<Ecommerce> optionalNext = ecommerceRepository.findFirstByIdGreaterThanOrderById(id);
 
         if (optionalEcommerce.isPresent()) {
             model.addAttribute("ecommercelisting", optionalEcommerce.get());
+        }
+        if (optionalPrev.isPresent()) {
+            model.addAttribute("prev", optionalPrev.get().getId());
+        } else {
+            model.addAttribute("prev", ecommerceRepository.findFirstByOrderByIdDesc().get().getId());
+        }
+        if (optionalNext.isPresent()) {
+            model.addAttribute("next", optionalNext.get().getId());
+        } else {
+            model.addAttribute("next", ecommerceRepository.findFirstByOrderByIdAsc().get().getId());
         }
         return "ecommercedetails";
     }

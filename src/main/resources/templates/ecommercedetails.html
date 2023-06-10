@@ -22,6 +22,14 @@
 <div th:if="${ecommercelisting}">
 <!-- Container (About Section) -->
 <div class="container-fluid">
+    <div th:if="${ecommercelisting}">
+        <div th:if="${prev!=null}" class="prevButtonDiv">
+            <a class="buttonLook smallButton" th:href="@{'/ecommercedetails/' + ${prev}}">&lt;</a>
+        </div>
+        <div th:if="${next!=null}" class="nextButtonDiv">
+            <a class="buttonLook smallButton" th:href="@{'/ecommercedetails/' + ${next}}">&gt;</a>
+        </div>
+    </div>
     <div class="row one">
         <div class="col-sm-8">
             <h2><a th:text="${ecommercelisting.getEcommerceName()}">klik hier</a></h2>
