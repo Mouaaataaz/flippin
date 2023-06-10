@@ -21,16 +21,24 @@
 
 
 <div th:each="ecommerce: ${ecommerces}">
+
 <div class="border-listings">
   <img class="img-listing"th:src="@{/img/fitness.jpg}" >
-
-    <a class="buttonLook mediumButton" th:href="@{'/ecommercedetails/'+${ecommerce.getId()}}">
     <span class="ecommerce-name" th:text="${ecommerce.getEcommerceName()}">ecommerce name</span>
-    </a>
+
+
+  <a class="buttonLook mediumButton" th:href="@{'/ecommercedetails/'+${ecommerce.getId()}}">
+    <div class="btn-listing">
+    <button class="btn btn-default btn-lg">More Details
+    </button>
+      </a>
+    </div>
+
     <div class="ecommerce-location">
       <i class="fa fa-map-marker" ></i>
     <span th:text="${ecommerce.getLocation()}">ecommerce name</span>
     </div>
+
   </div>
 </div>
 
