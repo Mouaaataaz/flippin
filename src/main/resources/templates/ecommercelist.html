@@ -19,10 +19,14 @@
 
 <div th:replace="~{/fragments/headerfooter :: header}">This is the header</div>
 
+
+<div th:each="ecommerce: ${ecommerces}">
 <div class="border-listings">
   <img class="img-listing"th:src="@{/img/fitness.jpg}" >
-  <div th:each="ecommerce: ${ecommerces}">
+
+    <a class="buttonLook mediumButton" th:href="@{'/ecommercedetails/'+${ecommerce.getId()}}">
     <span class="ecommerce-name" th:text="${ecommerce.getEcommerceName()}">ecommerce name</span>
+    </a>
     <div class="ecommerce-location">
       <i class="fa fa-map-marker" ></i>
     <span th:text="${ecommerce.getLocation()}">ecommerce name</span>
