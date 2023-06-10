@@ -61,8 +61,11 @@
     <div th:if="${ecommercelisting}">
     <div class="PrevNext">
         <div th:if="${prev!=null}" class="prevButtonDiv">
+            <div th:if="${next!=null}" class="prevButtonDiv">
         <a th:href="@{'/ecommercedetails/' + ${prev}}">&#8249; Prev</a>
+
         <a th:href="@{'/ecommercedetails/' + ${next}}">Next &#8250;</a>
+            </div>
     </div>
     </div>
 </div>
