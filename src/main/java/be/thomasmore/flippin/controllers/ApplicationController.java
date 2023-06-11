@@ -25,4 +25,28 @@ public class ApplicationController {
         model.addAttribute("applications", allApplication);
         return "applicationlist";
     }
+
+    @GetMapping({"/applicationdetails", "/applicationdetails/{id}"})
+    public String applicationDetails(Model model, @PathVariable(required = false) Integer id) {
+        if (id == null) return "artistdetails";
+        Optional<Application> optionalEcommerce = applicationRepository.findById(id);
+        Optional<Application> optionalPrev = applicationRepository.findFirstByIdLessThanOrderByIdDesc(id);
+        Optional<Application> optionalNext = applicationRepository.findFirstByIdGreaterThanOrderById(id);
+
+        if (optionalEcommerce.isPresent()) {
+            model.addAttribute("applicationlisting", optionalEcommerce.get());
+        }
+        if (optionalPrev.isPresent()) {
+            model.addAttribute("prev", optionalPrev.get().getId());
+        } else {
+            model.addAttribute("prev", applicationRepository.findFirstByOrderByIdDesc().get().getId());
+        }
+        if (optionalNext.isPresent()) {
+            model.addAttribute("next", optionalNext.get().getId());
+        } else {
+            model.addAttribute("next", applicationRepository.findFirstByOrderByIdAsc().get().getId());
+        }
+        return "applicationdetails";
+    }
+
 }
