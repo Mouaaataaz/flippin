@@ -1,7 +1,6 @@
 package be.thomasmore.flippin.controllers;
 
 import be.thomasmore.flippin.model.Application;
-import be.thomasmore.flippin.model.Ecommerce;
 import be.thomasmore.flippin.repositories.ApplicationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -29,12 +28,12 @@ public class ApplicationController {
     @GetMapping({"/applicationdetails", "/applicationdetails/{id}"})
     public String applicationDetails(Model model, @PathVariable(required = false) Integer id) {
         if (id == null) return "artistdetails";
-        Optional<Application> optionalEcommerce = applicationRepository.findById(id);
+        Optional<Application> optionalApplication = applicationRepository.findById(id);
         Optional<Application> optionalPrev = applicationRepository.findFirstByIdLessThanOrderByIdDesc(id);
         Optional<Application> optionalNext = applicationRepository.findFirstByIdGreaterThanOrderById(id);
 
-        if (optionalEcommerce.isPresent()) {
-            model.addAttribute("applicationlisting", optionalEcommerce.get());
+        if (optionalApplication.isPresent()) {
+            model.addAttribute("applicationlisting", optionalApplication.get());
         }
         if (optionalPrev.isPresent()) {
             model.addAttribute("prev", optionalPrev.get().getId());

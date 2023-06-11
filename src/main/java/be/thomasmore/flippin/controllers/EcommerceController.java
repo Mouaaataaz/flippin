@@ -27,7 +27,7 @@ public class EcommerceController {
 
     @GetMapping({"/ecommercedetails", "/ecommercedetails/{id}"})
     public String ecommerceDetails(Model model, @PathVariable(required = false) Integer id) {
-        if (id == null) return "artistdetails";
+        if (id == null) return "ecommercedetails";
         Optional<Ecommerce> optionalEcommerce = ecommerceRepository.findById(id);
         Optional<Ecommerce> optionalPrev = ecommerceRepository.findFirstByIdLessThanOrderByIdDesc(id);
         Optional<Ecommerce> optionalNext = ecommerceRepository.findFirstByIdGreaterThanOrderById(id);

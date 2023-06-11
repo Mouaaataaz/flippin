@@ -16,4 +16,10 @@ insert into ECOMMERCE (
 values (
            3, 'Bruh', 'MBA', 25700, 1210, '2017', 'Perfect', 'CreditCart', 'BELGIUM');
 
+insert into APPLICATION (
+    ID, APPLICATION_NAME, TYPE, PRICE, MONTHLY_PROFIT, FOUNDATION, TOTAL_DOWNLOADED,
+    PAYMENT_METHOD, LOCATION)
+values (
+           1, 'Awesomeness', 'IOS', 100700, 3010, '2012', 257821, 'CreditCart', 'MOROCCO');
+
 
