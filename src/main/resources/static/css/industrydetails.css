@@ -1,0 +1,92 @@
+body{
+
+    background-color: darkgrey;
+}
+
+img {
+    border: 0;
+    width: 80px;
+    height: auto;
+}
+
+.navbar {
+    background: white;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    border-bottom-width: 4px;
+}
+
+.nav-link {
+    color: black;
+}
+
+#footer {
+
+    flex-shrink: 0;
+    background-color: white;
+    border-top-style: solid;
+    border-top-color: black;
+    border-top-width: 4px;
+}
+
+.text-copyright{
+    color:black;
+}
+
+.img-listing{
+    width: 100%;
+    height: auto;
+}
+.one{
+    background-color: white;
+    width:95%;
+    padding:15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.jumbotron {
+    background-color: #f4511e;
+    color: #fff;
+    padding: 100px 25px;
+}
+.container-fluid {
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.bg-grey {
+    background-color: #f6f6f6;
+}
+.logo-small {
+    color: #f4511e;
+    font-size: 50px;
+}
+.logo {
+    color: #f4511e;
+    font-size: 200px;
+}
+@media screen and (max-width: 768px) {
+    .col-sm-4 {
+        text-align: center;
+        margin: 25px 0;
+    }
+}
+
+PrevNext{
+    margin-left: 50%;
+    margin-right: 50%;
+    font-size: 17px;
+}
+.PrevNext a, .PrevNext a:visited{
+    background-color: #006969;
+    box-shadow: 1px 1px #006969;
+    border-radius: 4px;
+    color: #fff;
+    padding: 8px;
+    margin: 16px;
+    text-decoration: none;
+}
+.PrevNext a:hover{
+    background-color: #004949;
+    box-shadow: 1px 1px #004949;
+}

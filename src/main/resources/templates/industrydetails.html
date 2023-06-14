@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta ecommerceName="viewport" content="width=device-width, initial-scale=1.0">
-  <title>List Of Industries</title>
+  <title>Industry Detail Page</title>
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/style.css}"  href="/css/start.css" />
+  <link rel="stylesheet" type="text/css" media="all" th:href="@{/css/industrydetails.css}"  href="/css/start.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -19,23 +19,35 @@
 
 <div th:replace="~{/fragments/headerfooter :: header}">This is the header</div>
 
-<div class="intro">
-  <h2 class="text-center">List Of Industries</h2>
-</div>
 
-<div class="row photos">
-  <div class="col-12 col-lg-4 col-sm-4 item text-center mb-2" th:each="industry: ${industries}">
-    <div class="image-container">
-      <img class="img-fluid" th:src="@{/img/fitness.jpg}">
-      <a class="buttonLook mediumButton" th:href="@{'/industrydetails/'+${industry.getId()}}">
-      <div class="text-overlay">
-        <span class="ecommerce-name" th:text="${industry.getIndustryName()}">industry name</span>
-      </div>
-      </a>
+
+<div class="container-fluid text-center">
+  <h2>More details about the Industry</h2>
+  <br>
+  <div class="row two">
+    <div class="col-sm-4">
+      <i class="fa-solid fa-info" style="font-size: 30px;"></i>
+      <h4>Description</h4>
+      <span th:text="${industrylisting.getDescription()}">ecommerce</span>
+    </div>
+    <div class="col-sm-4">
+      <i class="fa-sharp fa-solid fa-chart-simple" style="font-size: 30px;"></i>
+      <h4>Market Size & Worth</h4>
+      <span th:text="${industrylisting.getMarketSize()}+ ' $'">ecommerce</span>
     </div>
   </div>
+  <br><br>
 </div>
+<div th:if="${industrylisting}">
+  <div class="PrevNext text-center">
+    <div th:if="${prev!=null}" class="prevButtonDiv">
+      <div th:if="${next!=null}" class="prevButtonDiv">
+        <a th:href="@{'/industrydetails/' + ${prev}}">&#8249; Prev</a>
 
+        <a th:href="@{'/industrydetails/' + ${next}}">Next &#8250;</a>
+      </div>
+    </div>
+  </div>
 
 
 

@@ -17,6 +17,6 @@ public class HomeController {
 
     @GetMapping("/marketplace")
     public String marketplace(Model model) {
-        return "marketplace";
+        return "marketplacelist";
     }
 }

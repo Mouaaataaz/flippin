@@ -2,6 +2,7 @@ package be.thomasmore.flippin.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToOne;
 
 @Entity
 public class Ecommerce {
@@ -24,6 +25,9 @@ public class Ecommerce {
     private String PaymentMethod;
 
     private String Location;
+
+    @ManyToOne
+    private Marketplace marketplace;
 
     public Ecommerce() {
 
@@ -99,5 +103,13 @@ public class Ecommerce {
 
     public void setLocation(String location) {
         Location = location;
+    }
+
+    public Marketplace getMarketplace() {
+        return marketplace;
+    }
+
+    public void setMarketplace(Marketplace marketplace) {
+        this.marketplace = marketplace;
     }
 }

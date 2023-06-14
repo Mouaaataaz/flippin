@@ -127,3 +127,19 @@ img {
 }
 
 
+PrevNext{
+    font-size: 17px;
+}
+.PrevNext a, .PrevNext a:visited{
+    background-color: #006969;
+    box-shadow: 1px 1px #006969;
+    border-radius: 4px;
+    color: #fff;
+    padding: 8px;
+    margin: 16px;
+    text-decoration: none;
+}
+.PrevNext a:hover{
+    background-color: #004949;
+    box-shadow: 1px 1px #004949;
+}
