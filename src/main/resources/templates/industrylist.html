@@ -24,7 +24,7 @@
 </div>
 
 <div class="row photos">
-  <div class="col-12 col-lg-4 col-sm-4 item text-center mb-2" th:each="industry: ${industries}">
+  <div class="col-12 col-md-4 item text-center mb-2" th:each="industry: ${industries}">
     <div class="image-container">
       <img class="img-fluid" th:src="@{/img/fitness.jpg}">
       <a class="buttonLook mediumButton" th:href="@{'/industrydetails/'+${industry.getId()}}">

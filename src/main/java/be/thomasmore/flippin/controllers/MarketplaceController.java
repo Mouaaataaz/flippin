@@ -3,6 +3,8 @@ package be.thomasmore.flippin.controllers;
 import be.thomasmore.flippin.model.Marketplace;
 import be.thomasmore.flippin.repositories.EcommerceRepository;
 import be.thomasmore.flippin.repositories.MarketplaceRepository;
+import be.thomasmore.flippin.repositories.ApplicationRepository;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,6 +24,9 @@ public class MarketplaceController {
     @Autowired
     MarketplaceRepository marketplaceRepository;
 
+    @Autowired
+    ApplicationRepository applicationRepository;
+
     @GetMapping({"/marketplacelist", "/marketplacelist/{id}"})
     public String marketplacelist(Model model, @PathVariable ( required=false) Integer id) {
         if (id==null) return "marketplacelist";
@@ -32,6 +37,7 @@ public class MarketplaceController {
             Marketplace marketplace = optionalMarketplace.get();
             model.addAttribute("marketplace", marketplace);
             model.addAttribute("ecommerces",ecommerceRepository.findByMarketplace(marketplace));
+            model.addAttribute("applications", applicationRepository.findByMarketplace(marketplace));
         }
 
         return "marketplacelist";

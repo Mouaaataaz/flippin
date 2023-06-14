@@ -28,12 +28,17 @@
     <div class="col-sm-4">
       <i class="fa-solid fa-info" style="font-size: 30px;"></i>
       <h4>Description</h4>
-      <span th:text="${industrylisting.getDescription()}">ecommerce</span>
+      <span th:text="${industrylisting.getDescription()}"></span>
     </div>
     <div class="col-sm-4">
-      <i class="fa-sharp fa-solid fa-chart-simple" style="font-size: 30px;"></i>
+      <i class="fas fa-money-bill" style="font-size: 30px;"></i>
       <h4>Market Size & Worth</h4>
-      <span th:text="${industrylisting.getMarketSize()}+ ' $'">ecommerce</span>
+      <span th:text="${industrylisting.getMarketSize()}+ ' $'"></span>
+    </div>
+    <div class="col-sm-4">
+      <i class="fa-solid fa-chart-simple" style="font-size: 30px;"></i>
+      <h4>Competition</h4>
+      <span th:text="${industrylisting.getCompetition()}"></span>
     </div>
   </div>
   <br><br>

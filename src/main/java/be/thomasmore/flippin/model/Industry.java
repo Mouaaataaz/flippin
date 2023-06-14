@@ -18,6 +18,8 @@ public class Industry {
 
     private Integer MarketSize;
 
+    private String Competition;
+
     public Industry(){
 
     }
@@ -60,5 +62,13 @@ public class Industry {
 
     public void setIndustryImage(String industryImage) {
         this.industryImage = industryImage;
+    }
+
+    public String getCompetition() {
+        return Competition;
+    }
+
+    public void setCompetition(String competition) {
+        Competition = competition;
     }
 }
