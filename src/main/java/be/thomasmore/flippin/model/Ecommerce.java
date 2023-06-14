@@ -2,7 +2,10 @@ package be.thomasmore.flippin.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
 import jakarta.persistence.ManyToOne;
+
+import java.util.Collection;
 
 @Entity
 public class Ecommerce {
@@ -28,6 +31,9 @@ public class Ecommerce {
 
     @ManyToOne
     private Marketplace marketplace;
+
+    @ManyToMany(mappedBy = "ecommerces")
+    private Collection<Industry> industries;
 
     public Ecommerce() {
 
@@ -111,5 +117,13 @@ public class Ecommerce {
 
     public void setMarketplace(Marketplace marketplace) {
         this.marketplace = marketplace;
+    }
+
+    public Collection<Industry> getIndustries() {
+        return industries;
+    }
+
+    public void setIndustries(Collection<Industry> industries) {
+        this.industries = industries;
     }
 }

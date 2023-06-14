@@ -43,6 +43,13 @@
   </div>
   <br><br>
 </div>
+
+<div th:each="ecommerce: ${industrylisting.getEcommerces()}">
+
+  <span th:text="${ecommerce.getEcommerceName()}">team name</span>
+  </a>
+</div>
+
 <div th:if="${industrylisting}">
   <div class="PrevNext text-center">
     <div th:if="${prev!=null}" class="prevButtonDiv">

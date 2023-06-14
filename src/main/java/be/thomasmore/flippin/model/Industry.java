@@ -2,6 +2,10 @@ package be.thomasmore.flippin.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
+import jakarta.persistence.ManyToMany;
+
+import java.util.Collection;
+
 
 @Entity
 public class Industry {
@@ -19,6 +23,9 @@ public class Industry {
     private Integer MarketSize;
 
     private String Competition;
+
+    @ManyToMany
+    private Collection<Ecommerce> ecommerces;
 
     public Industry(){
 
@@ -70,5 +77,13 @@ public class Industry {
 
     public void setCompetition(String competition) {
         Competition = competition;
+    }
+
+    public Collection<Ecommerce> getEcommerces() {
+        return ecommerces;
+    }
+
+    public void setEcommerces(Collection<Ecommerce> ecommerces) {
+        this.ecommerces = ecommerces;
     }
 }
