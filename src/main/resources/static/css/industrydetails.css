@@ -90,3 +90,73 @@ PrevNext{
     background-color: #004949;
     box-shadow: 1px 1px #004949;
 }
+.border-listings{
+    background-color: white;
+    position: relative;
+    display: flex;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    box-shadow: black;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img-listing{
+    width:200px;
+    height: auto;
+}
+.ecommerce-name{
+    margin-left: 30px;
+    font-size: 30px;
+    font-weight: bold;
+
+}
+
+.ecommerce-location{
+    position: absolute;
+    bottom: 0;
+    right: 15px;
+
+}
+.ecommerce-price{
+    position: absolute;
+    bottom: 0;
+    right: 9%;
+    color: blue;
+    font-weight: bold;
+}
+.ecommerce-type{
+    position: absolute;
+    bottom: 0;
+    right: 35%;
+    color: orangered;
+    font-weight: bold;
+}
+
+.ecommerce-profit{
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    color: forestgreen;
+    font-weight: bold;
+}
+
+.fa-map-pin{
+    color: red;
+}
+.btn-listing{
+    position: absolute;
+    top:0;
+    right: 15px;
+    margin-top:15px;
+    margin-bottom: 70px;
+    color: white;
+    background-color: dodgerblue;
+    border-radius: 10px;
+}
+
+.btn-listing:hover {
+    transform: scale(1.1);
+    transition: all 0.6s;
+}

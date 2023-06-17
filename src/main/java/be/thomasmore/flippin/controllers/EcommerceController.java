@@ -37,6 +37,8 @@ public class EcommerceController {
         Optional<Ecommerce> optionalNext = ecommerceRepository.findFirstByIdGreaterThanOrderById(id);
 
         if (optionalEcommerce.isPresent()) {
+            Ecommerce e = optionalEcommerce.get();
+            model.addAttribute("ecommerce", e);
             model.addAttribute("ecommercelisting", optionalEcommerce.get());
         }
         if (optionalPrev.isPresent()) {

@@ -20,7 +20,10 @@
 <div th:replace="~{/fragments/headerfooter :: header}">This is the header</div>
 
 <div th:if="${ecommercelisting}">
-<!-- Container (About Section) -->
+
+    <div th:if="${ecommerce}" class="editButtonDiv">
+        <a class="buttonLook smallButton" th:href="@{'/addfavoriteecommerce/' + ${ecommerce.id}}">add to favorites</a>
+    </div>
 <div class="container-fluid">
     <div class="row one">
         <div class="col-sm-8">
