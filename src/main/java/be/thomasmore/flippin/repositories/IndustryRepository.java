@@ -1,5 +1,7 @@
 package be.thomasmore.flippin.repositories;
 
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 import be.thomasmore.flippin.model.Industry;
@@ -19,4 +21,6 @@ public interface IndustryRepository extends CrudRepository<Industry, Integer> {
 
     @Query("SELECT i FROM Industry i WHERE :word IS NULL OR LOWER(i.industryName) LIKE LOWER(CONCAT('%',:word,'%'))")
     List<Industry> findByKeyword(@Param("word") String word);
+
+
 }

@@ -35,7 +35,15 @@
         </button>
     </a>
   </div>
-
+  <div class="ecommerce-type">
+    <span th:text="'Type: '+${ecommerce.getEcommerceType()}">ecommerce name</span>
+  </div>
+  <div class="ecommerce-profit">
+    <span th:text="'Monthly Profit: '+${ecommerce.getMonthlyProfit()}+' $'">ecommerce name</span>
+  </div>
+  <div class="ecommerce-price">
+    <span th:text="'Price: '+${ecommerce.getEcommercePrice()}+' $'">ecommerce name</span>
+  </div>
   <div class="ecommerce-location">
     <i class="fas fa-map-pin" ></i>
     <span th:text="${ecommerce.getLocation()}">ecommerce name</span>
@@ -49,6 +57,7 @@
   <div class="border-listings">
     <img class="img-listing"th:src="@{/img/fitness.jpg}" >
     <span class="ecommerce-name" th:text="${app.getApplicationName()}">application name</span>
+
     <div class="ecommerce-location">
       <i class="fas fa-map-pin" ></i>
       <span th:text="${app.getLocation()}">ecommerce name</span>

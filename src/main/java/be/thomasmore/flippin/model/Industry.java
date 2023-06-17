@@ -24,6 +24,8 @@ public class Industry {
 
     private String Competition;
 
+    private String industryPhoto;
+
     @ManyToMany
     private Collection<Ecommerce> ecommerces;
 
@@ -85,5 +87,13 @@ public class Industry {
 
     public void setEcommerces(Collection<Ecommerce> ecommerces) {
         this.ecommerces = ecommerces;
+    }
+
+    public String getIndustryPhoto() {
+        return industryPhoto;
+    }
+
+    public void setIndustryPhoto(String industryPhoto) {
+        this.industryPhoto = industryPhoto;
     }
 }

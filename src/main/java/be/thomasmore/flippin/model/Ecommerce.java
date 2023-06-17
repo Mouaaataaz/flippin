@@ -15,19 +15,20 @@ public class Ecommerce {
 
     private String ecommerceName;
 
-    private String Type;
+    private String ecommerceType;
 
-    private Integer Price;
+    private Integer ecommercePrice;
 
-    private Integer MonthlyProfit;
+    private Integer monthlyProfit;
 
-    private String Foundation;
+    private String foundation;
 
     private String ProductsRatings;
 
     private String PaymentMethod;
 
     private String Location;
+
 
     @ManyToOne
     private Marketplace marketplace;
@@ -55,36 +56,36 @@ public class Ecommerce {
         this.ecommerceName = ecommerceName;
     }
 
-    public String getType() {
-        return Type;
+    public String getEcommerceType() {
+        return ecommerceType;
     }
 
-    public void setType(String type) {
-        Type = type;
+    public void setEcommerceType(String ecommerceType) {
+        this.ecommerceType = ecommerceType;
     }
 
-    public Integer getPrice() {
-        return Price;
+    public Integer getEcommercePrice() {
+        return ecommercePrice;
     }
 
-    public void setPrice(Integer price) {
-        Price = price;
+    public void setEcommercePrice(Integer ecommercePrice) {
+        this.ecommercePrice = ecommercePrice;
     }
 
     public Integer getMonthlyProfit() {
-        return MonthlyProfit;
+        return monthlyProfit;
     }
 
     public void setMonthlyProfit(Integer monthlyProfit) {
-        MonthlyProfit = monthlyProfit;
+        this.monthlyProfit = monthlyProfit;
     }
 
     public String getFoundation() {
-        return Foundation;
+        return foundation;
     }
 
     public void setFoundation(String foundation) {
-        Foundation = foundation;
+        this.foundation = foundation;
     }
 
     public String getProductsRatings() {
@@ -126,4 +127,6 @@ public class Ecommerce {
     public void setIndustries(Collection<Industry> industries) {
         this.industries = industries;
     }
+
+
 }

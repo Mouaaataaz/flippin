@@ -26,13 +26,16 @@ img {
     border-top-style: solid;
     border-top-color: black;
     border-top-width: 4px;
+
 }
 
 .text-copyright{
     color:black;
 }
 
-
+.btn{
+    border-radius: 20px;
+}
 /** -------------------- Here Start The Marketplace Page ---------------------------------- */
 
 .border-listings{
@@ -68,7 +71,32 @@ img {
     right: 15px;
 
 }
+.ecommerce-price{
+    position: absolute;
+    bottom: 0;
+    right: 9%;
+    color: blue;
+    font-weight: bold;
+}
+.ecommerce-type{
+    position: absolute;
+    bottom: 0;
+    right: 35%;
+    color: orangered;
+    font-weight: bold;
+}
 
+.ecommerce-profit{
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    color: forestgreen;
+    font-weight: bold;
+}
+
+.fa-map-pin{
+    color: red;
+}
 .btn-listing{
     position: absolute;
     top:0;
