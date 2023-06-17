@@ -87,7 +87,7 @@
 <div th:each="ecommerce: ${allEcommerce}">
 
 <div class="border-listings">
-  <img class="img-listing"th:src="@{/img/fitness.jpg}" >
+  <img class="img-listing" th:src="@{|${ecommerce.getEcommerceImage()}|}" >
     <span class="ecommerce-name" th:text="${ecommerce.getEcommerceName()}">ecommerce name</span>
 
 

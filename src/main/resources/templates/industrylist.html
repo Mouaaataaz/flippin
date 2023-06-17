@@ -46,7 +46,7 @@
 <div class="row photos">
   <div class="col-12 col-md-4 item text-center mb-2" th:each="industry: ${industries}">
     <div class="image-container">
-      <img class="img-fluid" th:src="@{/img/fitness.jpg}">
+      <img class="img-fluid" th:src="@{|${industry.getIndustryImage()}|}">
       <a class="buttonLook mediumButton" th:href="@{'/industrydetails/'+${industry.getId()}}">
       <div class="text-overlay">
         <span class="ecommerce-name" th:text="${industry.getIndustryName()}">industry name</span>
@@ -61,6 +61,6 @@
 
 
 
-<div th:replace="~{/fragments/headerfooter :: footer}">This is the footer</div>
+<div  th:replace="~{/fragments/headerfooter :: footer} ">This is the footer</div>
 </body>
 </html>

@@ -29,6 +29,8 @@ public class Ecommerce {
 
     private String Location;
 
+    private String ecommerceImage;
+
 
     @ManyToOne
     private Marketplace marketplace;
@@ -128,5 +130,11 @@ public class Ecommerce {
         this.industries = industries;
     }
 
+    public String getEcommerceImage() {
+        return ecommerceImage;
+    }
 
+    public void setEcommerceImage(String ecommerceImage) {
+        this.ecommerceImage = ecommerceImage;
+    }
 }
