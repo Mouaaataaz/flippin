@@ -55,7 +55,7 @@
 <div th:each="app: ${applications}">
 
   <div class="border-listings">
-    <img class="img-listing"th:src="@{/img/fitness.jpg}" >
+    <img class="img-listing"th:src="@{|${app.getApplicationImage()}|}" >
     <span class="ecommerce-name" th:text="${app.getApplicationName()}">application name</span>
 
     <div class="ecommerce-location">

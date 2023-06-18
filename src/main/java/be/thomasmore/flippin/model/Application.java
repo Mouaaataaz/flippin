@@ -26,6 +26,7 @@ public class Application {
 
     private String Location;
 
+    private String applicationImage;
     @ManyToOne
     private Marketplace marketplace;
 
@@ -111,5 +112,13 @@ public class Application {
 
     public void setMarketplace(Marketplace marketplace) {
         this.marketplace = marketplace;
+    }
+
+    public String getApplicationImage() {
+        return applicationImage;
+    }
+
+    public void setApplicationImage(String applicationImage) {
+        this.applicationImage = applicationImage;
     }
 }
