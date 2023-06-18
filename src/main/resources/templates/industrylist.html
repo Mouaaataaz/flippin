@@ -24,22 +24,22 @@
 </div>
 
 <div class="filters" th:if="${showFilter}">
-  <div class="verticalmargin">
-    <a th:href="@{/industrylist}" class="buttonLook filterButton">-</a>
+  <div class="verticalmargin text-center">
+    <a style="font-size: 35px;"th:href="@{/industrylist}" class="buttonLook filterButton">Hide</a>
   </div>
   <form>
-    <div class="onefilter">
-      <input type="submit" value="search" class="buttonLook">
-    </div>
-    <div class="onefilter">
+
+    <div class="onefilter text-center">
       <label for="keyword" class="filtername">keyword</label>
       <input type="text" id="keyword" name="keyword" th:value="${keyword}">
+      <input type="submit" value="search" class="buttonLook">
     </div>
+
   </form>
 </div>
 <div class="filters" th:unless="${showFilter}">
-  <div class="verticalmargin">
-    <a th:href="@{/industrylist/filter}" class="buttonLook filterButton">+</a>
+  <div class="verticalmargin text-center">
+    <a style="font-size: 35px;" th:href="@{/industrylist/filter}" class="buttonLook filterButton">Filter</a>
   </div>
 </div>
 
