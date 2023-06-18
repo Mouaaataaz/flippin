@@ -6,42 +6,42 @@ INSERT INTO "PUBLIC"."MARKETPLACE" VALUES
 
 
 insert into "PUBLIC"."ECOMMERCE"(
-                       ID, ECOMMERCE_NAME, ECOMMERCE_TYPE, ECOMMERCE_PRICE, MONTHLY_PROFIT, FOUNDATION, PRODUCTS_RATINGS,
+                       ID, ECOMMERCE_NAME, ECOMMERCE_DESCRIPTION, ECOMMERCE_TYPE, ECOMMERCE_PRICE, MONTHLY_PROFIT, FOUNDATION, PRODUCTS_RATINGS,
                        PAYMENT_METHOD, LOCATION,ECOMMERCE_IMAGE, MARKETPLACE_ID)
 values (
-           1, 'Pikiki', 'FBA', 15000, 500, '2015', 'Good', 'Paypal, CreditCard', 'USA','https://upload.wikimedia.org/wikipedia/commons/b/b6/Gym_wiki.jpg',1);
+           1, 'Pikiki', 'This amazon FBA account is for sale. Amazon FBA is a service offered by Amazon that enables sellers to store their products in Amazon''s fulfillment centers. Amazon takes care of storage, packaging, and shipping of the products on behalf of the seller.', 'FBA', 15000, 500, '2015', 'Good', 'Paypal, CreditCard', 'USA','https://upload.wikimedia.org/wikipedia/commons/b/b6/Gym_wiki.jpg',1);
 
 insert into "PUBLIC"."ECOMMERCE" (
-    ID, ECOMMERCE_NAME, ECOMMERCE_TYPE, ECOMMERCE_PRICE, MONTHLY_PROFIT, FOUNDATION, PRODUCTS_RATINGS,
+    ID, ECOMMERCE_NAME, ECOMMERCE_DESCRIPTION, ECOMMERCE_TYPE, ECOMMERCE_PRICE, MONTHLY_PROFIT, FOUNDATION, PRODUCTS_RATINGS,
     PAYMENT_METHOD, LOCATION, ECOMMERCE_IMAGE, MARKETPLACE_ID)
 values (
-           2, 'Bilaa', 'KDP', 25000, 1200, '2013', 'Great', 'CreditCard', 'CANADA','https://upload.wikimedia.org/wikipedia/commons/5/5a/Books_HD_%288314929977%29.jpg', 1);
+           2, 'Bilaa','This amazon KDP account is for sale. Amazon KDP is a self-publishing platform for authors and content creators. It enables authors to publish and distribute their books in digital formats, primarily for Amazon Kindle e-readers and Kindle apps.', 'KDP', 25000, 1200, '2013', 'Great', 'CreditCard', 'CANADA','https://upload.wikimedia.org/wikipedia/commons/5/5a/Books_HD_%288314929977%29.jpg', 1);
 
 insert into "PUBLIC"."ECOMMERCE" (
-    ID, ECOMMERCE_NAME, ECOMMERCE_TYPE, ECOMMERCE_PRICE, MONTHLY_PROFIT, FOUNDATION, PRODUCTS_RATINGS,
+    ID, ECOMMERCE_NAME, ECOMMERCE_DESCRIPTION, ECOMMERCE_TYPE, ECOMMERCE_PRICE, MONTHLY_PROFIT, FOUNDATION, PRODUCTS_RATINGS,
     PAYMENT_METHOD, LOCATION, ECOMMERCE_IMAGE, MARKETPLACE_ID)
 values (
-           3, 'Bruzz', 'MBA', 25700, 1210, '2017', 'Perfect', 'CreditCart', 'BELGIUM','https://upload.wikimedia.org/wikipedia/commons/5/52/ClothingReadyWear.jpg', 1);
+           3, 'Bruzz','This amazon MBA account is for sale. Amazon Merch is a print-on-demand service provided by Amazon. It allows designers to create and sell custom-designed apparel, such as T-shirts, hoodies, and more, through Amazon''s platform.', 'MBA', 25700, 1210, '2017', 'Perfect', 'CreditCart', 'BELGIUM','https://upload.wikimedia.org/wikipedia/commons/5/52/ClothingReadyWear.jpg', 1);
 insert into "PUBLIC"."ECOMMERCE" (
-    ID, ECOMMERCE_NAME, ECOMMERCE_TYPE, ECOMMERCE_PRICE, MONTHLY_PROFIT, FOUNDATION, PRODUCTS_RATINGS,
+    ID, ECOMMERCE_NAME, ECOMMERCE_DESCRIPTION, ECOMMERCE_TYPE, ECOMMERCE_PRICE, MONTHLY_PROFIT, FOUNDATION, PRODUCTS_RATINGS,
     PAYMENT_METHOD, LOCATION, ECOMMERCE_IMAGE, MARKETPLACE_ID)
 values (
-           4, 'Polas', 'SHOPIFY', 105700, 5047, '2015', 'Good', 'CreditCart, Paypal', 'USA','https://upload.wikimedia.org/wikipedia/commons/e/ea/San_Diego_Automotive_Museum_-_Entrance_%28May_2022%29.jpg', 1);
+           4, 'Polas','This Shopify website is for sale. Shopify is an e-commerce platform that allows businesses to create and operate online stores. It provides a wide range of features and tools for store setup, product management, payment processing, and order fulfillment.', 'SHOPIFY', 105700, 5047, '2015', 'Good', 'CreditCart, Paypal', 'USA','https://upload.wikimedia.org/wikipedia/commons/e/ea/San_Diego_Automotive_Museum_-_Entrance_%28May_2022%29.jpg', 1);
 insert into "PUBLIC"."ECOMMERCE" (
-    ID, ECOMMERCE_NAME, ECOMMERCE_TYPE, ECOMMERCE_PRICE, MONTHLY_PROFIT, FOUNDATION, PRODUCTS_RATINGS,
+    ID, ECOMMERCE_NAME, ECOMMERCE_DESCRIPTION, ECOMMERCE_TYPE, ECOMMERCE_PRICE, MONTHLY_PROFIT, FOUNDATION, PRODUCTS_RATINGS,
     PAYMENT_METHOD, LOCATION, ECOMMERCE_IMAGE, MARKETPLACE_ID)
 values (
-           5, 'Mlaos', 'KDP', 157000, 2210, '2012', 'Perfect', 'CreditCart', 'BRAZIL','https://upload.wikimedia.org/wikipedia/commons/5/5a/Books_HD_%288314929977%29.jpg', 1);
+           5, 'Mlaos','This amazon KDP account is for sale. Amazon KDP is a self-publishing platform for authors and content creators. It enables authors to publish and distribute their books in digital formats, primarily for Amazon Kindle e-readers and Kindle apps.', 'KDP', 157000, 2210, '2012', 'Perfect', 'CreditCart', 'BRAZIL','https://upload.wikimedia.org/wikipedia/commons/5/5a/Books_HD_%288314929977%29.jpg', 1);
 insert into "PUBLIC"."ECOMMERCE" (
-    ID, ECOMMERCE_NAME, ECOMMERCE_TYPE, ECOMMERCE_PRICE, MONTHLY_PROFIT, FOUNDATION, PRODUCTS_RATINGS,
+    ID, ECOMMERCE_NAME, ECOMMERCE_DESCRIPTION, ECOMMERCE_TYPE, ECOMMERCE_PRICE, MONTHLY_PROFIT, FOUNDATION, PRODUCTS_RATINGS,
     PAYMENT_METHOD, LOCATION, ECOMMERCE_IMAGE, MARKETPLACE_ID)
 values (
-           6, 'Kaoz', 'SHOPIFY', 57000, 510, '2010', 'Good', 'Paypal', 'FRANCE','https://www.tlnt.com/_next/image?url=https%3A%2F%2Fapi.eremedia.com%2Fwp-content%2Fuploads%2F2018%2F11%2FVideo-game.jpg&w=1920&q=75', 1);
+           6, 'Kaoz','This Shopify website is for sale. Shopify is an e-commerce platform that allows businesses to create and operate online stores. It provides a wide range of features and tools for store setup, product management, payment processing, and order fulfillment.', 'SHOPIFY', 57000, 510, '2010', 'Good', 'Paypal', 'FRANCE','https://www.tlnt.com/_next/image?url=https%3A%2F%2Fapi.eremedia.com%2Fwp-content%2Fuploads%2F2018%2F11%2FVideo-game.jpg&w=1920&q=75', 1);
 insert into "PUBLIC"."ECOMMERCE" (
-    ID, ECOMMERCE_NAME, ECOMMERCE_TYPE, ECOMMERCE_PRICE, MONTHLY_PROFIT, FOUNDATION, PRODUCTS_RATINGS,
+    ID, ECOMMERCE_NAME, ECOMMERCE_DESCRIPTION, ECOMMERCE_TYPE, ECOMMERCE_PRICE, MONTHLY_PROFIT, FOUNDATION, PRODUCTS_RATINGS,
     PAYMENT_METHOD, LOCATION, ECOMMERCE_IMAGE, MARKETPLACE_ID)
 values (
-           7, 'Prioc', 'FBA', 37800, 415, '2014', 'Great', 'CreditCart', 'ITALY','https://npr.brightspotcdn.com/dims4/default/b99ae25/2147483647/strip/true/crop/580x380+0+0/resize/1760x1154!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fipr%2Ffiles%2F201703%2F012516_Prairie-combine.jpg', 1);
+           7, 'Prioc','This amazon FBA account is for sale. Amazon FBA is a service offered by Amazon that enables sellers to store their products in Amazon''s fulfillment centers. Amazon takes care of storage, packaging, and shipping of the products on behalf of the seller.', 'FBA', 37800, 415, '2014', 'Great', 'CreditCart', 'ITALY','https://npr.brightspotcdn.com/dims4/default/b99ae25/2147483647/strip/true/crop/580x380+0+0/resize/1760x1154!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fipr%2Ffiles%2F201703%2F012516_Prairie-combine.jpg', 1);
 
 
 
@@ -60,17 +60,17 @@ insert into "PUBLIC"."APPLICATION" (
     ID, APPLICATION_NAME, TYPE, PRICE, MONTHLY_PROFIT, FOUNDATION, TOTAL_DOWNLOADED,
     PAYMENT_METHOD, LOCATION, APPLICATION_IMAGE, MARKETPLACE_ID)
 values (
-           2, 'Greatness', 'ANDROID', 500700, 7010, '2017', 350000, 'CreditCart', 'SPAIN','https://upload.wikimedia.org/wikipedia/commons/5/5a/Books_HD_%288314929977%29.jpg', 1);
+           2, 'Greatness', 'ANDROID', 500700, 7010, '2017', 350000, 'CreditCart', 'SPAIN','https://www.tlnt.com/_next/image?url=https%3A%2F%2Fapi.eremedia.com%2Fwp-content%2Fuploads%2F2018%2F11%2FVideo-game.jpg&w=1920&q=75', 1);
 insert into "PUBLIC"."APPLICATION" (
     ID, APPLICATION_NAME, TYPE, PRICE, MONTHLY_PROFIT, FOUNDATION, TOTAL_DOWNLOADED,
     PAYMENT_METHOD, LOCATION, APPLICATION_IMAGE, MARKETPLACE_ID)
 values (
-           3, 'AOAP', 'ANDROID', 650700, 7910, '2016', 420500, 'CreditCart', 'AUSTRALIA','https://www.tlnt.com/_next/image?url=https%3A%2F%2Fapi.eremedia.com%2Fwp-content%2Fuploads%2F2018%2F11%2FVideo-game.jpg&w=1920&q=75', 1);
+           3, 'AOAP', 'ANDROID', 650700, 7910, '2016', 420500, 'CreditCart', 'AUSTRALIA','https://upload.wikimedia.org/wikipedia/commons/e/ea/San_Diego_Automotive_Museum_-_Entrance_%28May_2022%29.jpg', 1);
 insert into "PUBLIC"."APPLICATION" (
     ID, APPLICATION_NAME, TYPE, PRICE, MONTHLY_PROFIT, FOUNDATION, TOTAL_DOWNLOADED,
     PAYMENT_METHOD, LOCATION, APPLICATION_IMAGE, MARKETPLACE_ID)
 values (
-           4, 'ZOOLS', 'IOS', 550700, 5910, '2019', 220500, 'CreditCart', 'INDIA','https://upload.wikimedia.org/wikipedia/commons/5/52/ClothingReadyWear.jpg', 1);
+           4, 'ZOOLS', 'IOS', 550700, 5910, '2019', 220500, 'CreditCart', 'INDIA','https://upload.wikimedia.org/wikipedia/commons/e/ea/San_Diego_Automotive_Museum_-_Entrance_%28May_2022%29.jpg', 1);
 
 
 
@@ -124,6 +124,12 @@ INSERT INTO INDUSTRY_ECOMMERCES (INDUSTRIES_ID, ECOMMERCES_ID) VALUES (4, 5);
 INSERT INTO INDUSTRY_ECOMMERCES (INDUSTRIES_ID, ECOMMERCES_ID) VALUES (5, 3);
 
 INSERT INTO INDUSTRY_ECOMMERCES (INDUSTRIES_ID, ECOMMERCES_ID) VALUES (6, 7);
+
+
+INSERT INTO INDUSTRY_APPLICATIONS (INDUSTRIES_ID, APPLICATIONS_ID) VALUES (1, 1);
+INSERT INTO INDUSTRY_APPLICATIONS (INDUSTRIES_ID, APPLICATIONS_ID) VALUES (2, 2);
+INSERT INTO INDUSTRY_APPLICATIONS (INDUSTRIES_ID, APPLICATIONS_ID) VALUES (3, 3);
+INSERT INTO INDUSTRY_APPLICATIONS (INDUSTRIES_ID, APPLICATIONS_ID) VALUES (3, 4);
 
 
 

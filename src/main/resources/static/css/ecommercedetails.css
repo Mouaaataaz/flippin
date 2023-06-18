@@ -88,3 +88,15 @@ PrevNext{
     background-color: #004949;
     box-shadow: 1px 1px #004949;
 }
+
+.fa-save {
+    font-size: 35px;
+    color: red;
+    margin-left: 50%;
+    margin-right: 50%;
+}
+
+.fa-save:hover{
+    transform: scale(1.1);
+    transition: all 0.6s;
+}

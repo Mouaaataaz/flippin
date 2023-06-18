@@ -31,6 +31,8 @@ public class Ecommerce {
 
     private String ecommerceImage;
 
+    private String ecommerceDescription;
+
 
     @ManyToOne
     private Marketplace marketplace;
@@ -136,5 +138,13 @@ public class Ecommerce {
 
     public void setEcommerceImage(String ecommerceImage) {
         this.ecommerceImage = ecommerceImage;
+    }
+
+    public String getEcommerceDescription() {
+        return ecommerceDescription;
+    }
+
+    public void setEcommerceDescription(String ecommerceDescription) {
+        this.ecommerceDescription = ecommerceDescription;
     }
 }

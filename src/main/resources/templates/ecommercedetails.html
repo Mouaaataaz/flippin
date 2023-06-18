@@ -22,25 +22,27 @@
 <div th:if="${ecommercelisting}">
 
     <div th:if="${ecommerce}" class="editButtonDiv">
-        <a class="buttonLook smallButton" th:href="@{'/addfavoriteecommerce/' + ${ecommerce.id}}">add to favorites</a>
+        <a class="buttonLook smallButton" th:href="@{'/addfavoriteecommerce/' + ${ecommerce.id}}">
+            <i class="fas fa-save"></i>
+        </a>
     </div>
 <div class="container-fluid">
     <div class="row one">
         <div class="col-sm-8">
-            <h2><a th:text="${ecommercelisting.getEcommerceName()}">klik hier</a></h2>
-            <h4>Lorem ipsum..</h4>
-            <p>Lorem ipsum..</p>
+            <h1><a th:text="${ecommercelisting.getEcommerceName()}">klik hier</a></h1>
+            <p th:text="${ecommercelisting.getEcommerceDescription()}">Lorem ipsum..</p>
+
 
             <div th:if="${!ecommerce.getIndustries().isEmpty()}" >
                 <div th:each="industry: ${ecommerce.getIndustries()}">
                     <a class="btn btn-outline-danger" style="font-size: 40px;" th:href="@{'/industrydetails/'+${industry.getId()}}">
-                        <span th:text="${industry.getIndustryName()}">stadium name</span>
+                        <span th:text="${industry.getIndustryName()}">industry name</span>
                     </a>
                 </div>
             </div>
         </div>
         <div class="col-sm-4">
-            <img class="img-listing"th:src="@{/img/fitness.jpg}" >
+            <img class="img-listing"th:src="@{|${ecommercelisting.getEcommerceImage()}|}" >
         </div>
     </div>
 </div>

@@ -29,6 +29,9 @@ public class Industry {
     @ManyToMany
     private Collection<Ecommerce> ecommerces;
 
+    @ManyToMany
+    private Collection<Application> applications;
+
     public Industry(){
 
     }
@@ -95,5 +98,13 @@ public class Industry {
 
     public void setIndustryPhoto(String industryPhoto) {
         this.industryPhoto = industryPhoto;
+    }
+
+    public Collection<Application> getApplications() {
+        return applications;
+    }
+
+    public void setApplications(Collection<Application> applications) {
+        this.applications = applications;
     }
 }

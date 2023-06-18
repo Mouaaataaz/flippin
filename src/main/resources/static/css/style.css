@@ -21,7 +21,7 @@ img {
 
 #footer {
 
-    flex-shrink: 0;
+
     background-color: white;
     border-top-style: solid;
     border-top-color: black;
@@ -176,4 +176,19 @@ PrevNext{
 .PrevNext a:hover{
     background-color: #004949;
     box-shadow: 1px 1px #004949;
+}
+
+.coolButton {
+    background-color: red;
+    color: #FFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.coolButton:hover {
+    background-color: darkred;
 }

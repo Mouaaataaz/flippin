@@ -1,6 +1,7 @@
 package be.thomasmore.flippin.controllers;
 
 import be.thomasmore.flippin.model.Application;
+import be.thomasmore.flippin.model.Ecommerce;
 import be.thomasmore.flippin.repositories.ApplicationRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -33,6 +34,8 @@ public class ApplicationController {
         Optional<Application> optionalNext = applicationRepository.findFirstByIdGreaterThanOrderById(id);
 
         if (optionalApplication.isPresent()) {
+            Application a = optionalApplication.get();
+            model.addAttribute("application", a);
             model.addAttribute("applicationlisting", optionalApplication.get());
         }
         if (optionalPrev.isPresent()) {

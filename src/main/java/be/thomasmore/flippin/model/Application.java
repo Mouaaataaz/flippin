@@ -3,6 +3,9 @@ package be.thomasmore.flippin.model;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.ManyToMany;
+
+import java.util.Collection;
 
 @Entity
 public class Application {
@@ -29,6 +32,9 @@ public class Application {
     private String applicationImage;
     @ManyToOne
     private Marketplace marketplace;
+
+    @ManyToMany(mappedBy = "applications")
+    private Collection<Industry> industries;
 
     public Application(){
 
@@ -120,5 +126,13 @@ public class Application {
 
     public void setApplicationImage(String applicationImage) {
         this.applicationImage = applicationImage;
+    }
+
+    public Collection<Industry> getIndustries() {
+        return industries;
+    }
+
+    public void setIndustries(Collection<Industry> industries) {
+        this.industries = industries;
     }
 }
