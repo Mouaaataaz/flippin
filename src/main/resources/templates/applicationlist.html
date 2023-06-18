@@ -27,17 +27,25 @@
          <span class="ecommerce-name" th:text="${app.getApplicationName()}">application name</span>
 
 
-        <!-- <a class="buttonLook mediumButton" th:href="@{'/ecommercedetails/'+${ecommerce.getId()}}">
+         <a class="buttonLook mediumButton" th:href="@{'/applicationdetails/'+${app.getId()}}">
              <div class="btn-listing">
                  <button class="btn btn-default btn-lg">More Details
                  </button>
          </a>
      </div>
-
+    <div class="ecommerce-type">
+        <span th:text="'Type: '+${app.getType()}">ecommerce name</span>
+    </div>
+    <div class="ecommerce-profit">
+        <span th:text="'Monthly Profit: '+${app.getMonthlyProfit()}">app</span>
+    </div>
+    <div class="ecommerce-price">
+        <span th:text="'Price: '+${app.getPrice()}+' $'">app</span>
+    </div>
      <div class="ecommerce-location">
-         <i class="fa fa-map-marker" ></i>
-         <span th:text="${application.getLocation()}">country</span>
-     </div>-->
+         <i class="fas fa-map-pin" ></i>
+         <span th:text="${app.getLocation()}">country</span>
+     </div>
 
  </div>
  </div>

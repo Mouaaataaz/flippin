@@ -82,30 +82,30 @@ values (
 insert into "PUBLIC"."INDUSTRY"(
     ID, INDUSTRY_NAME, INDUSTRY_IMAGE, DESCRIPTION, MARKET_SIZE, COMPETITION )
 values (
-           1,'Health & Fitness','https://upload.wikimedia.org/wikipedia/commons/b/b6/Gym_wiki.jpg', 'this is a big industry', 1000000, 'HIGH' );
+           1,'Health & Fitness','https://upload.wikimedia.org/wikipedia/commons/b/b6/Gym_wiki.jpg', 'The health and fitness industry encompasses businesses and activities related to improving and maintaining physical well-being.', 1000000, 'HIGH' );
 
 insert into "PUBLIC"."INDUSTRY"(
     ID, INDUSTRY_NAME, INDUSTRY_IMAGE, DESCRIPTION, MARKET_SIZE, COMPETITION )
 values (
-           2,'Gaming','https://www.tlnt.com/_next/image?url=https%3A%2F%2Fapi.eremedia.com%2Fwp-content%2Fuploads%2F2018%2F11%2FVideo-game.jpg&w=1920&q=75', 'this is a huge industry', 10000000, 'MEDIUM' );
+           2,'Gaming','https://www.tlnt.com/_next/image?url=https%3A%2F%2Fapi.eremedia.com%2Fwp-content%2Fuploads%2F2018%2F11%2FVideo-game.jpg&w=1920&q=75', 'The gaming industry revolves around the creation, development, and distribution of video games and interactive entertainment.', 10000000, 'MEDIUM' );
 
 insert into "PUBLIC"."INDUSTRY"(
     ID, INDUSTRY_NAME, INDUSTRY_IMAGE, DESCRIPTION, MARKET_SIZE, COMPETITION )
 values (
-           3,'Automotive','https://upload.wikimedia.org/wikipedia/commons/e/ea/San_Diego_Automotive_Museum_-_Entrance_%28May_2022%29.jpg', 'this is an interesting industry', 570000, 'LOW' );
+           3,'Automotive','https://upload.wikimedia.org/wikipedia/commons/e/ea/San_Diego_Automotive_Museum_-_Entrance_%28May_2022%29.jpg', ' The automotive industry involves the design, manufacturing, sale, and maintenance of vehicles. It includes automobile manufacturers, component suppliers, dealerships, car rental services, auto repair shops, and related businesses. ', 570000, 'LOW' );
 
 insert into "PUBLIC"."INDUSTRY"(
     ID, INDUSTRY_NAME, INDUSTRY_IMAGE, DESCRIPTION, MARKET_SIZE, COMPETITION)
 values (
-           4,'Books','https://upload.wikimedia.org/wikipedia/commons/5/5a/Books_HD_%288314929977%29.jpg', 'this is an interesting industry', 459954, 'MEDIUM');
+           4,'Books','https://upload.wikimedia.org/wikipedia/commons/5/5a/Books_HD_%288314929977%29.jpg', 'The book industry focuses on the creation, publishing, and distribution of written content in various formats such as print books, e-books, and audiobooks.', 459954, 'MEDIUM');
 insert into "PUBLIC"."INDUSTRY"(
     ID, INDUSTRY_NAME, INDUSTRY_IMAGE, DESCRIPTION, MARKET_SIZE, COMPETITION )
 values (
-           5,'Clothing','https://upload.wikimedia.org/wikipedia/commons/5/52/ClothingReadyWear.jpg', 'this is an interesting industry', 856796,'HIGH' );
+           5,'Clothing','https://upload.wikimedia.org/wikipedia/commons/5/52/ClothingReadyWear.jpg', 'The clothing industry involves the production, manufacturing, and retailing of clothing and apparel.', 856796,'HIGH' );
 insert into "PUBLIC"."INDUSTRY"(
     ID, INDUSTRY_NAME, INDUSTRY_IMAGE, DESCRIPTION, MARKET_SIZE, COMPETITION )
 values (
-           6,'Agriculture','https://npr.brightspotcdn.com/dims4/default/b99ae25/2147483647/strip/true/crop/580x380+0+0/resize/1760x1154!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fipr%2Ffiles%2F201703%2F012516_Prairie-combine.jpg', 'this is an interesting industry', 235874, 'HIGH' );
+           6,'Agriculture','https://npr.brightspotcdn.com/dims4/default/b99ae25/2147483647/strip/true/crop/580x380+0+0/resize/1760x1154!/format/webp/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2Flegacy%2Fsites%2Fipr%2Ffiles%2F201703%2F012516_Prairie-combine.jpg', 'The agriculture industry encompasses activities related to cultivation, production, and distribution of crops, livestock, and other agricultural products.', 235874, 'HIGH' );
 
 
 

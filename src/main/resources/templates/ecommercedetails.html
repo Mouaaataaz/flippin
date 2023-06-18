@@ -30,7 +30,14 @@
             <h2><a th:text="${ecommercelisting.getEcommerceName()}">klik hier</a></h2>
             <h4>Lorem ipsum..</h4>
             <p>Lorem ipsum..</p>
-            <button class="btn btn-default btn-lg">Get in Touch</button>
+
+            <div th:if="${!ecommerce.getIndustries().isEmpty()}" >
+                <div th:each="industry: ${ecommerce.getIndustries()}">
+                    <a class="btn btn-outline-danger" style="font-size: 40px;" th:href="@{'/industrydetails/'+${industry.getId()}}">
+                        <span th:text="${industry.getIndustryName()}">stadium name</span>
+                    </a>
+                </div>
+            </div>
         </div>
         <div class="col-sm-4">
             <img class="img-listing"th:src="@{/img/fitness.jpg}" >
