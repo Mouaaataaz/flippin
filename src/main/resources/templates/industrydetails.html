@@ -79,7 +79,7 @@
 <div th:each="app: ${industrylisting.getApplications()}">
   <div class="border-listings"  style="margin-bottom: 20px;">
     <img class="img-listing"th:src="@{|${app.getApplicationImage()}|}" >
-    <span class="ecommerce-name" th:text="${app.getApplicationName()}">ecommerce name</span>
+    <span class="ecommerce-name" th:text="${app.getApplicationName()}">app name</span>
 
 
     <a class="buttonLook mediumButton" th:href="@{'/applicationdetails/'+${app.getId()}}">
@@ -89,17 +89,17 @@
     </a>
   </div>
   <div class="ecommerce-type">
-    <span th:text="'Type: '+${app.getType()}">ecommerce name</span>
+    <span th:text="'Type: '+${app.getType()}">app</span>
   </div>
   <div class="ecommerce-profit">
-    <span th:text="'Monthly Profit: '+${app.getMonthlyProfit()}+' $'">ecommerce name</span>
+    <span th:text="'Monthly Profit: '+${app.getMonthlyProfit()}+' $'">app</span>
   </div>
   <div class="ecommerce-price">
-    <span th:text="'Price: '+${app.getPrice()}+' $'">ecommerce name</span>
+    <span th:text="'Price: '+${app.getPrice()}+' $'">app</span>
   </div>
   <div class="ecommerce-location">
     <i class="fas fa-map-pin" ></i>
-    <span th:text="${app.getLocation()}">ecommerce name</span>
+    <span th:text="${app.getLocation()}">country</span>
   </div>
 
 </div>
