@@ -23,7 +23,7 @@
 
   <div th:if="${showFilter}" >
     <div class="verticalmargin">
-      <a th:href="@{/ecommercelist}" class="btn btn-outline-dark">-</a>
+      <a th:href="@{/ecommercelist}" class="btn btn-outline-dark">Hide</a>
     </div>
 
     <form>
@@ -64,8 +64,8 @@
 
 
       </div>
-      <h3>Low to High</h3>
-      <label for="profit" class="filtername">LOW TO HIGH</label>
+      <h3>Sort By</h3>
+      <label for="profit" class="filtername">High To Low</label>
       <input type="checkbox" id="profit" th:checked="${profit}"  value="profit" name="profit">
 
 
@@ -80,7 +80,7 @@
 
   <div  th:unless="${showFilter}">
     <div class="verticalmargin">
-      <a th:href="@{/ecommercelist/filter}" class="btn btn-outline-dark">+</a>
+      <a th:href="@{/ecommercelist/filter}" class="btn btn-outline-dark">Filter</a>
     </div>
   </div>
 

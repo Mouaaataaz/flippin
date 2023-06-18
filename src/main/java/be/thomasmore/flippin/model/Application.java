@@ -30,6 +30,8 @@ public class Application {
     private String Location;
 
     private String applicationImage;
+
+    private String applicationDescription;
     @ManyToOne
     private Marketplace marketplace;
 
@@ -134,5 +136,13 @@ public class Application {
 
     public void setIndustries(Collection<Industry> industries) {
         this.industries = industries;
+    }
+
+    public String getApplicationDescription() {
+        return applicationDescription;
+    }
+
+    public void setApplicationDescription(String applicationDescription) {
+        this.applicationDescription = applicationDescription;
     }
 }

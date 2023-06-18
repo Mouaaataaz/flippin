@@ -24,7 +24,38 @@
 
 
 
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
 
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img style="width:100%; height:auto;"th:src="@{/img/ecommerce1.jpg}" alt="Image 1">
+                <div class="carousel-caption">
+                    <h1>Welcome to Flippin!</h1>
+                    <p>Where you can buy online businesses</p>
+                    <div class="editButtonDiv">
+                        <a class="buttonLook smallButton coolButton" href="/marketplacelist/1" >Marketplace</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $('.carousel').carousel({
+            interval: 2000 // Slide duration in milliseconds (2 seconds in this example)
+        });
+    });
+</script>
 
 
 <div th:replace="~{/fragments/headerfooter :: footer}">This is the footer</div>

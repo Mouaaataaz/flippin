@@ -51,26 +51,26 @@ values (
 
 
 insert into "PUBLIC"."APPLICATION" (
-    ID, APPLICATION_NAME, TYPE, PRICE, MONTHLY_PROFIT, FOUNDATION, TOTAL_DOWNLOADED,
+    ID, APPLICATION_NAME, APPLICATION_DESCRIPTION, TYPE, PRICE, MONTHLY_PROFIT, FOUNDATION, TOTAL_DOWNLOADED,
     PAYMENT_METHOD, LOCATION, APPLICATION_IMAGE, MARKETPLACE_ID)
 values (
-           1, 'Awesomeness', 'IOS', 100700, 3010, '2012', 257821, 'CreditCart', 'MOROCCO','https://upload.wikimedia.org/wikipedia/commons/b/b6/Gym_wiki.jpg', 1);
+           1, 'Awesomeness', 'Awesomeness is a revolutionary mobile application designed to transform your fitness journey and help you achieve your health and wellness goals.', 'IOS', 100700, 3010, '2012', 257821, 'CreditCart', 'MOROCCO','https://upload.wikimedia.org/wikipedia/commons/b/b6/Gym_wiki.jpg', 1);
 
 insert into "PUBLIC"."APPLICATION" (
-    ID, APPLICATION_NAME, TYPE, PRICE, MONTHLY_PROFIT, FOUNDATION, TOTAL_DOWNLOADED,
+    ID, APPLICATION_NAME, APPLICATION_DESCRIPTION, TYPE, PRICE, MONTHLY_PROFIT, FOUNDATION, TOTAL_DOWNLOADED,
     PAYMENT_METHOD, LOCATION, APPLICATION_IMAGE, MARKETPLACE_ID)
 values (
-           2, 'Greatness', 'ANDROID', 500700, 7010, '2017', 350000, 'CreditCart', 'SPAIN','https://www.tlnt.com/_next/image?url=https%3A%2F%2Fapi.eremedia.com%2Fwp-content%2Fuploads%2F2018%2F11%2FVideo-game.jpg&w=1920&q=75', 1);
+           2, 'Greatness', 'Greatness is a captivating mobile gaming application that takes players on an extraordinary journey into a vast and immersive virtual world.', 'ANDROID', 500700, 7010, '2017', 350000, 'CreditCart', 'SPAIN','https://www.tlnt.com/_next/image?url=https%3A%2F%2Fapi.eremedia.com%2Fwp-content%2Fuploads%2F2018%2F11%2FVideo-game.jpg&w=1920&q=75', 1);
 insert into "PUBLIC"."APPLICATION" (
-    ID, APPLICATION_NAME, TYPE, PRICE, MONTHLY_PROFIT, FOUNDATION, TOTAL_DOWNLOADED,
+    ID, APPLICATION_NAME, APPLICATION_DESCRIPTION, TYPE, PRICE, MONTHLY_PROFIT, FOUNDATION, TOTAL_DOWNLOADED,
     PAYMENT_METHOD, LOCATION, APPLICATION_IMAGE, MARKETPLACE_ID)
 values (
-           3, 'AOAP', 'ANDROID', 650700, 7910, '2016', 420500, 'CreditCart', 'AUSTRALIA','https://upload.wikimedia.org/wikipedia/commons/e/ea/San_Diego_Automotive_Museum_-_Entrance_%28May_2022%29.jpg', 1);
+           3, 'AOAP', 'AOAP is a cutting-edge mobile application that revolutionizes the way car owners interact with their vehicles.', 'ANDROID', 650700, 7910, '2016', 420500, 'CreditCart', 'AUSTRALIA','https://upload.wikimedia.org/wikipedia/commons/e/ea/San_Diego_Automotive_Museum_-_Entrance_%28May_2022%29.jpg', 1);
 insert into "PUBLIC"."APPLICATION" (
-    ID, APPLICATION_NAME, TYPE, PRICE, MONTHLY_PROFIT, FOUNDATION, TOTAL_DOWNLOADED,
+    ID, APPLICATION_NAME, APPLICATION_DESCRIPTION, TYPE, PRICE, MONTHLY_PROFIT, FOUNDATION, TOTAL_DOWNLOADED,
     PAYMENT_METHOD, LOCATION, APPLICATION_IMAGE, MARKETPLACE_ID)
 values (
-           4, 'ZOOLS', 'IOS', 550700, 5910, '2019', 220500, 'CreditCart', 'INDIA','https://upload.wikimedia.org/wikipedia/commons/e/ea/San_Diego_Automotive_Museum_-_Entrance_%28May_2022%29.jpg', 1);
+           4, 'ZOOLS', 'ZOOLS is a state-of-the-art mobile application designed to revolutionize the way drivers interact with their vehicles.', 'IOS', 550700, 5910, '2019', 220500, 'CreditCart', 'INDIA','https://upload.wikimedia.org/wikipedia/commons/e/ea/San_Diego_Automotive_Museum_-_Entrance_%28May_2022%29.jpg', 1);
 
 
 
